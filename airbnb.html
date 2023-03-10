@@ -9,6 +9,7 @@
 </head>
 <body>
   <main class="container" style="height: 1500px;">
+    <!-- navbar -->
     <nav class="navbar sticky-top bg-light">
       <div class="container-fluid">
         <a class="navbar-brand d-inline-block" href="#">
@@ -23,9 +24,10 @@
         </div>
       </div>
     </nav>
+    <!-- 한국의 휴가 form -->
     <section class="container">
       <div class="row">
-        <div class="col-12 col-md-4 card">
+        <div class="col-12 col-md-4 card shadow">
           <h2>한국의 휴가 임대 시설</h2>
           <p class="text-muted">에어비앤비에서 독특한 숙소를 예약하세요.</p>
           <!-- form -->
@@ -33,54 +35,97 @@
             <input type="text" class="form-control" id="floatingInputValue" placeholder="???" value="한국">
             <label for="floatingInputValue">위치</label>
           </form>
-          <div class="box px-3 row">
-            <div class="col border-end">
-              <form class="form-floating">
-                <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
-                <label for="floatingInputValue2">체크인</label>
-              </form>
+          <div class="input-group">
+            <form class="form-floating">
+              <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
+              <label for="floatingInputValue2">체크인</label>
+            </form>
+            <form class="form-floating">
+              <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
+              <label for="floatingInputValue2">체크아웃</label>
+            </form>
+          </div>
+          <div class="input-group">
+            <div class="form-floating">
+              <select class="form-select border-0" id="adult" aria-label="어른 인원 체크">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="0">0</option>                
+              </select>
+              <label for="adult">성인</label>
             </div>
-            <div class="col">
-              <form class="form-floating">
-                <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
-                <label for="floatingInputValue2">체크아웃</label>
-              </form>
+            <div class="form-floating">
+              <select class="form-select border-0" id="kids" aria-label="어린이 인원 체크">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="0">0</option>                
+              </select>
+              <label for="kids">어린이</label>
             </div>
           </div>
-          <div class="box px-3 row">
-            <div class="col border-end">
-              <div class="form-floating">
-                <select class="form-select border-0" id="adult" aria-label="어른 인원 체크">
-                  <option selected value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>                
-                </select>
-                <label for="adult">성인</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-floating">
-                <select class="form-select border-0" id="kids" aria-label="어린이 인원 체크">
-                  <option selected value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>                
-                </select>
-                <label for="kids">어린이</label>
-              </div>
-            </div>
+          <button type="button" class="btn btn-danger mb-4">검색</button>
+        </div>
+      </div>
+    </section>
 
+    <!-- 최고평점 -->
+    <section>
+      <h2>최고 평점을 받은 한국의 휴가 숙소</h2>
+      <p class="text-muted">위치, 청결도 등에서 게스트의 높은 평가를 받은 숙소입니다.</p>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <img class="img-fluid flex-shrink-0 rounded" src="assets/images/01.webp">
+          <div class="row">
+            <div class="col-8">Sindun-myeon, Icheon-si의 전원주택</div> 
+            <div class="col-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg> 4.81 (137)
+            </div>
+            <div class="col-12 text-muted">서울 근교 이천시의 감성 힐링 숙소</div>
+            <div class="col-12 text-muted text-truncate">이천 도자 예술촌에 위치한 통기타 모양의 전원 주택입니다. 자연과 매우 잘 어우러진 이천 도자 예술 마을에서 독특한 외관으로 유명한 세라 기타 문화관의 3층 테라스가 넓은 독채 집입니다.
+
+              아늑하고 따뜻한 방에서 여유로운 감성 힐링 휴가를 즐겨보세요. 높은 건물이 없는 마을의 3층 위치에서 탁 트인 자연 경관을 즐길 수도 있고, 통기타 집 앞에 위치한 잔디밭에서 피크닉을 즐길 수도 있습니다.</div>
           </div>
+        </div>
+        <div class="col">
+          <div class="img-fluid flex-shrink-0 rounded overflow-hidden position-relative"  style="width: 300px; height: 230px;">
+            <img class="w-100 flex-shrink-0 rounded object-fit-fill position-absolute translate-middle top-50 start-50" src="assets/images/02.webp">
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="d-inline-block mb-0">전원주택</p>
+            <p class="d-inline-block mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-warning bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg> <span class="align-middle">4.8 <span class="fs-6">(137)</span></span>
+            </p>
+          </div>
+          <p>
+            Lorem Ipsum<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aliquam expedita nemo iste optio laudantium dolore, error distinctio enim consectetur deleniti commodi vero accusantium qui ab a minima quia! Mollitia?
+          </p>
+        </div>
+        <div class="col">
+          <div class=" ratio ratio-1x1">
+            <img class="flex-shrink-0 rounded" src="assets/images/02.webp">
+          </div>
+          <div class="row">
+            <div class="col-8 text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis aut omnis ut consequatur magnam! Nemo inventore vero tempore corporis?</div>
+            <div class="col-4 text-truncate">별점</div>
+            <div class="col-12 text-truncate text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="col-12 text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi soluta sint sunt nihil eligendi beatae distinctio sapiente iure nulla?</div>
+          </div>
+          
         </div>
       </div>
     </section>
   </main>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e44509cf3a.js" crossorigin="anonymous"></script>
 </body>
