@@ -26,7 +26,56 @@
     <section class="container">
       <div class="row">
         <div class="col-12 col-md-4 card">
-          form
+          <h2>한국의 휴가 임대 시설</h2>
+          <p class="text-muted">에어비앤비에서 독특한 숙소를 예약하세요.</p>
+          <!-- form -->
+          <form class="form-floating">
+            <input type="text" class="form-control" id="floatingInputValue" placeholder="???" value="한국">
+            <label for="floatingInputValue">위치</label>
+          </form>
+          <div class="box px-3 row">
+            <div class="col border-end">
+              <form class="form-floating">
+                <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
+                <label for="floatingInputValue2">체크인</label>
+              </form>
+            </div>
+            <div class="col">
+              <form class="form-floating">
+                <input type="date" class="form-control" id="floatingInputValue2" placeholder="???" value="날짜 입력">
+                <label for="floatingInputValue2">체크아웃</label>
+              </form>
+            </div>
+          </div>
+          <div class="box px-3 row">
+            <div class="col border-end">
+              <div class="form-floating">
+                <select class="form-select border-0" id="adult" aria-label="어른 인원 체크">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>                
+                </select>
+                <label for="adult">성인</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <select class="form-select border-0" id="kids" aria-label="어린이 인원 체크">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>                
+                </select>
+                <label for="kids">어린이</label>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
